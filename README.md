@@ -20,3 +20,5 @@ Le seguenti variabili devono essere configurate su Netlify:
 - `VITE_EMAILJS_SERVICE_ID`
 - `VITE_EMAILJS_TEMPLATE_ID`
 - `VITE_EMAILJS_PUBLIC_KEY`
+
+**Nota:** Queste variabili sono pubbliche per design (la Public Key di EmailJS è intenzionalmente pubblica). Il warning di Netlify può essere ignorato in modo sicuro.

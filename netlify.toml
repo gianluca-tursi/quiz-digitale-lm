@@ -2,6 +2,10 @@
   command = "npm run build"
   publish = "dist"
 
+[build.environment]
+  # Queste variabili sono pubbliche per design (EmailJS Public Key è intenzionalmente pubblica)
+  NETLIFY_SECRETS_IGNORE = "VITE_EMAILJS_PUBLIC_KEY,VITE_EMAILJS_SERVICE_ID,VITE_EMAILJS_TEMPLATE_ID"
+
 [[redirects]]
   from = "/*"
   to = "/index.html"
